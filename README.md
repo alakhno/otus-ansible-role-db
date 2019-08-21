@@ -33,6 +33,23 @@ Example Playbook
     - db
 ```
 
+Running tests locally
+---------------------
+
+Install dependencies:
+```shell script
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run tests:
+```shell script
+molecule create
+molecule converge
+moleculr verify
+```
+
 License
 -------
 
